@@ -1,0 +1,30 @@
+{
+  "family": "documenso-task",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "documenso-container",
+      "image": "954974238236.dkr.ecr.us-west-2.amazonaws.com/documenso:latest",
+      "memory": 512,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 3000,
+          "hostPort": 3000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        { "name": "NEXTAUTH_SECRET", "value": "${NEXTAUTH_SECRET}" },
+        { "name": "NEXT_PRIVATE_ENCRYPTION_KEY", "value": "${NEXT_PRIVATE_ENCRYPTION_KEY}" },
+        { "name": "NEXT_PUBLIC_WEBAPP_URL", "value": "${NEXT_PUBLIC_WEBAPP_URL}" }
+      ]
+    }
+  ],
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::954974238236:role/ecsTaskExecutionRole",  # Change this to your execution role ARN
+  "taskRoleArn": "arn:aws:iam::954974238236:role/ecsTaskRole"  # Change this to your task role ARN
+}
