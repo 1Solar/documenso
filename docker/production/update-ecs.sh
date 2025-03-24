@@ -1,66 +1,72 @@
 #!/bin/bash
 
-# Configuration Variables
-AWS_REGION="us-west-2"
-CLUSTER_NAME="documenso-cluster"  # Your ECS Cluster Name
-SERVICE_NAME="documenso-service"  # Your ECS Service Name
-TASK_DEFINITION_NAME="documenso-task"  # Task Definition Name
-CONTAINER_NAME="documenso-container"  # Container Name in Task Definition
-IMAGE_URI="954974238236.dkr.ecr.us-west-2.amazonaws.com/documenso:latest"  # ECR Docker Image URI
-DESIRED_COUNT=1  # Number of desired containers in the ECS service
+# Set variables
+AWS_REGION="us-west-2"  # Change to your AWS region
+ECR_REPO_NAME="documenso"
+AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query "Account" --output text)
+GIT_COMMIT_HASH=$(git rev-parse --short HEAD)  # Get the Git commit hash
+IMAGE_TAG=$GIT_COMMIT_HASH
+ECR_URL="${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO_NAME}"
 
-# Ensure AWS CLI is configured
-aws configure set region $AWS_REGION
+CLUSTER_NAME="documenso-cluster"
+TASK_DEFINITION_NAME="documenso-task-definition"
+SERVICE_NAME="documenso-service"
+VPC_ID="vpc-ce0e52b6"  # Your VPC ID
+SUBNETS="subnet-980a3ab3,subnet-c69a229b,subnet-ae07a9d6,subnet-e809c2a2"  # Comma-separated list of subnet IDs
+SECURITY_GROUP="sg-09e3a335a51b7ab14"  # Security group ID
+TASK_ROLE_ARN="arn:aws:iam::${AWS_ACCOUNT_ID}:role/ecsTaskExecutionRole"  # Assuming ECS execution role exists
 
-# Authenticate Docker to AWS ECR (if the image is in ECR)
-echo "Authenticating Docker to ECR..."
-aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $IMAGE_URI
+# Create ECS Cluster
+# echo "Creating ECS Cluster..."
+# aws ecs create-cluster --cluster-name $CLUSTER_NAME --region $AWS_REGION
 
-# Step 1: Register a new ECS Task Definition (updated task definition)
-echo "Registering a new ECS task definition..."
-cat > ecs-task-definition.json <<EOF
+# Create ECS Task Definition (Fargate)
+echo "Creating ECS Task Definition..."
+TASK_DEFINITION=$(cat <<EOF
 {
   "family": "$TASK_DEFINITION_NAME",
+  "executionRoleArn": "$TASK_ROLE_ARN",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "$CONTAINER_NAME",
-      "image": "$IMAGE_URI",
+      "name": "documenso-container",
+      "image": "$ECR_URL:$IMAGE_TAG",
       "memory": 512,
       "cpu": 256,
       "essential": true,
       "portMappings": [
         {
-          "containerPort": 3000,
-          "hostPort": 3000,
+          "containerPort": 433,
+          "hostPort": 433,
           "protocol": "tcp"
         }
-      ],
-      "environment": [
-        { "name": "NEXTAUTH_SECRET", "value": "\${NEXTAUTH_SECRET}" },
-        { "name": "NEXT_PRIVATE_ENCRYPTION_KEY", "value": "\${NEXT_PRIVATE_ENCRYPTION_KEY}" },
-        { "name": "NEXT_PUBLIC_WEBAPP_URL", "value": "\${NEXT_PUBLIC_WEBAPP_URL}" }
       ]
     }
   ],
-  "requiresCompatibilities": ["FARGATE"],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
   "cpu": "256",
-  "memory": "512",
-  "executionRoleArn": "arn:aws:iam::954974238236:role/ecsTaskExecutionRole",  # Change this to your execution role ARN
-  "taskRoleArn": "arn:aws:iam::954974238236:role/ecsTaskRole"  # Change this to your task role ARN
+  "memory": "512"
 }
 EOF
+)
 
-# Register the new task definition
-aws ecs register-task-definition --cli-input-json file://ecs-task-definition.json
+# Register the task definition
+echo "$TASK_DEFINITION" > task-definition.json
+aws ecs register-task-definition --cli-input-json file://task-definition.json --region $AWS_REGION
 
-# Step 2: Update the ECS service with the new task definition
-echo "Updating ECS service with the new task definition..."
-aws ecs update-service --cluster $CLUSTER_NAME --service $SERVICE_NAME --task-definition $TASK_DEFINITION_NAME --desired-count $DESIRED_COUNT
+# Create ECS Service
+echo "Creating ECS Service..."
+aws ecs create-service \
+  --cluster $CLUSTER_NAME \
+  --service-name $SERVICE_NAME \
+  --task-definition $TASK_DEFINITION_NAME \
+  --desired-count 1 \
+  --launch-type FARGATE \
+  --network-configuration "awsvpcConfiguration={subnets=[$SUBNETS],securityGroups=[$SECURITY_GROUP],assignPublicIp=ENABLED}" \
+  --region $AWS_REGION
 
-# Step 3: Verify ECS service status after update
-echo "Verifying ECS service status..."
-aws ecs describe-services --cluster $CLUSTER_NAME --services $SERVICE_NAME
+echo "ECS Cluster, Task Definition, and Service have been created successfully!"
 
-echo "ECS Update Completed!"
 

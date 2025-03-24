@@ -1,0 +1,26 @@
+{
+  "family": "documenso-task-definition",
+  "executionRoleArn": "arn:aws:iam::954974238236:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "documenso-container",
+      "image": "954974238236.dkr.ecr.us-west-2.amazonaws.com/documenso:d0a53d51",
+      "memory": 512,
+      "cpu": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 433,
+          "hostPort": 433,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ],
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512"
+}
