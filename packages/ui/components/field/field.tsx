@@ -29,6 +29,9 @@ const getCardClassNames = (
   checkBoxOrRadio: boolean,
   cardClassName?: string,
 ) => {
+  const parsedFieldMeta = field.fieldMeta ? ZFieldMetaSchema.parse(field.fieldMeta) : undefined;
+  if (parsedFieldMeta?.readOnly) return 'bg-transparent border-transparent backdrop-filter-none';
+
   const baseClasses =
     'field--FieldRootContainer field-card-container relative z-20 h-full w-full transition-all';
 
