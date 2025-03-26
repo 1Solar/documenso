@@ -55,59 +55,63 @@ export const DocumentReadOnlyFields = ({
               cardClassName="border-gray-300/50 !shadow-none backdrop-blur-[1px] bg-gray-50 ring-0 ring-offset-0"
             >
               <div className="absolute -right-3 -top-3">
-                <PopoverHover
-                  trigger={
-                    <Avatar className="dark:border-foreground h-8 w-8 border-2 border-solid border-gray-200/50 transition-colors hover:border-gray-200">
-                      <AvatarFallback className="bg-neutral-50 text-xs text-gray-400">
-                        {extractInitials(field.recipient.name || field.recipient.email)}
-                      </AvatarFallback>
-                    </Avatar>
-                  }
-                  contentProps={{
-                    className: 'relative flex w-fit flex-col p-4 text-sm',
-                  }}
-                >
-                  {showFieldStatus && (
-                    <Badge
-                      className="mx-auto mb-1 py-0.5"
-                      variant={
-                        field.recipient.signingStatus === SigningStatus.SIGNED
-                          ? 'default'
-                          : 'secondary'
-                      }
-                    >
-                      {field.recipient.signingStatus === SigningStatus.SIGNED ? (
-                        <>
-                          <SignatureIcon className="mr-1 h-3 w-3" />
-                          <Trans>Signed</Trans>
-                        </>
-                      ) : (
-                        <>
-                          <Clock className="mr-1 h-3 w-3" />
-                          <Trans>Pending</Trans>
-                        </>
-                      )}
-                    </Badge>
-                  )}
-
-                  <p className="text-center font-semibold">
-                    <span>{parseMessageDescriptor(_, FRIENDLY_FIELD_TYPE[field.type])} field</span>
-                  </p>
-
-                  <p className="text-muted-foreground mt-1 text-center text-xs">
-                    {field.recipient.name
-                      ? `${field.recipient.name} (${field.recipient.email})`
-                      : field.recipient.email}{' '}
-                  </p>
-
-                  <button
-                    className="absolute right-0 top-0 my-1 p-2 focus:outline-none focus-visible:ring-0"
-                    onClick={() => handleHideField(field.secondaryId)}
-                    title="Hide field"
+                {!field.fieldMeta?.readOnly && (
+                  <PopoverHover
+                    trigger={
+                      <Avatar className="dark:border-foreground h-8 w-8 border-2 border-solid border-gray-200/50 transition-colors hover:border-gray-200">
+                        <AvatarFallback className="bg-neutral-50 text-xs text-gray-400">
+                          {extractInitials(field.recipient.name || field.recipient.email)}
+                        </AvatarFallback>
+                      </Avatar>
+                    }
+                    contentProps={{
+                      className: 'relative flex w-fit flex-col p-4 text-sm',
+                    }}
                   >
-                    <EyeOffIcon className="h-3 w-3" />
-                  </button>
-                </PopoverHover>
+                    {showFieldStatus && (
+                      <Badge
+                        className="mx-auto mb-1 py-0.5"
+                        variant={
+                          field.recipient.signingStatus === SigningStatus.SIGNED
+                            ? 'default'
+                            : 'secondary'
+                        }
+                      >
+                        {field.recipient.signingStatus === SigningStatus.SIGNED ? (
+                          <>
+                            <SignatureIcon className="mr-1 h-3 w-3" />
+                            <Trans>Signed</Trans>
+                          </>
+                        ) : (
+                          <>
+                            <Clock className="mr-1 h-3 w-3" />
+                            <Trans>Pending</Trans>
+                          </>
+                        )}
+                      </Badge>
+                    )}
+
+                    <p className="text-center font-semibold">
+                      <span>
+                        {parseMessageDescriptor(_, FRIENDLY_FIELD_TYPE[field.type])} field
+                      </span>
+                    </p>
+
+                    <p className="text-muted-foreground mt-1 text-center text-xs">
+                      {field.recipient.name
+                        ? `${field.recipient.name} (${field.recipient.email})`
+                        : field.recipient.email}{' '}
+                    </p>
+
+                    <button
+                      className="absolute right-0 top-0 my-1 p-2 focus:outline-none focus-visible:ring-0"
+                      onClick={() => handleHideField(field.secondaryId)}
+                      title="Hide field"
+                    >
+                      <EyeOffIcon className="h-3 w-3" />
+                    </button>
+                  </PopoverHover>
+                )}
               </div>
 
               <div className="text-muted-foreground dark:text-background/70 break-all text-sm">
@@ -140,7 +144,7 @@ export const DocumentReadOnlyFields = ({
                       },
                       () => field.customText,
                     )
-                    .with({ type: FieldType.TEXT }, () => field.customText.substring(0, 20) + '...')
+                    .with({ type: FieldType.TEXT }, () => field.customText)
                     .with({ type: FieldType.DATE }, () =>
                       convertToLocalSystemFormat(
                         field.customText,
