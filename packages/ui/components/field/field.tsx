@@ -30,10 +30,10 @@ const getCardClassNames = (
   cardClassName?: string,
 ) => {
   const parsedFieldMeta = field.fieldMeta ? ZFieldMetaSchema.parse(field.fieldMeta) : undefined;
-  if (parsedFieldMeta?.readOnly) return 'bg-transparent border-transparent backdrop-filter-none';
+  const isFieldSigned = field.inserted;
 
   const baseClasses =
-    'field--FieldRootContainer field-card-container relative z-20 h-full w-full transition-all';
+    'field--FieldRootContainer field-card-container relative z-20 h-full w-full transition-all flex items-center';
 
   const insertedClasses =
     'bg-primary/20 border-primary ring-primary/20 ring-offset-primary/20 ring-2 ring-offset-2 dark:shadow-none';
@@ -66,6 +66,9 @@ const getCardClassNames = (
       'shadow-none': !field.inserted && checkBoxOrRadio,
       [validatingClasses]: !field.inserted && isValidating,
       [requiredClasses]: !field.inserted && parsedField?.required && !checkBoxOrRadio,
+      // Remove the background on required fields that have been filled
+      'bg-transparent border-transparent backdrop-filter-none ring-transparent ring-offset-transparent':
+        parsedField?.readOnly && isFieldSigned,
     },
     cardClassName,
   );

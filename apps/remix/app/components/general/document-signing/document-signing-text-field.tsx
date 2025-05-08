@@ -267,7 +267,7 @@ export const DocumentSigningTextField = ({
         <div className="flex h-full w-full items-center">
           <p
             className={cn(
-              'text-muted-foreground dark:text-background/80 w-full text-[clamp(0.1rem,2cqw,0.825rem)] duration-200',
+              'text-muted-foreground dark:text-background/80 w-full text-[clamp(0.1rem,2cqw,0.825rem)] leading-none duration-200',
               {
                 'text-left': parsedFieldMeta?.textAlign === 'left',
                 'text-center':

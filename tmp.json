@@ -1,0 +1,1415 @@
+{
+  "contract": {
+    "_id": "67e59b5b612987caa1779f0b",
+    "status": "signed",
+    "installer_id": "62bf61e94cf33b7cf84fd05b",
+    "dealership_id": "62c49d041582db2b6e24e258",
+    "signers": {
+      "customers": [
+        {
+          "name": "Carrie Cruz",
+          "email": "Ibthr4u2baby@yahoo.com",
+          "sent": "2025-03-27T18:41:52.243Z",
+          "viewed": "2025-03-27T18:42:19.325Z",
+          "signed": "2025-03-27T18:49:31.097Z"
+        }
+      ],
+      "static": [],
+      "rep": {
+        "name": "Eric Schrader",
+        "email": "eric.schrader@1solar.com",
+        "sent": "2025-03-27T18:49:31.098Z",
+        "viewed": "2025-03-27T18:53:43.258Z",
+        "signed": "2025-03-27T18:54:10.491Z"
+      }
+    },
+    "language": "en",
+    "created_by": "67195c462e6cdac3268d320f",
+    "proposal_snapshot_id": "67e59b5b612987caa1779ee2",
+    "proposal_id": "67e42807612987caa174c2a6",
+    "customer_id": "67e5964eea05963f059e3b46",
+    "document_id": "649538989eb194043f9dc850",
+    "contract_template": {
+      "_id": "649538989eb194043f9dc850",
+      "name": "1Solar - P&I - NV - EN",
+      "template_url": "https://1solar.signrequest.com/api/v1/templates/2cb1cf9d-6ed8-40ab-bb33-eaced9c81fd9/",
+      "service": "Sign Request",
+      "installer_id": "62bf61e94cf33b7cf84fd05b",
+      "external_template_id": "2cb1cf9d-6ed8-40ab-bb33-eaced9c81fd9",
+      "tags": [{ "key": "State", "value": "Nevada" }],
+      "field_mappings": [
+        { "external_field_id": "system.size", "internal_field_id": "6479038f51f01eedbb86f816" },
+        { "external_field_id": "cost.gross", "internal_field_id": "6478cabe51f01eedbb86f64b" },
+        { "external_field_id": "cost.deposit", "internal_field_id": "6479047bdacf95afc7c4afee" },
+        {
+          "external_field_id": "estFirstYearProduction",
+          "internal_field_id": "64816d58bcdac05ced5391a7"
+        },
+        { "external_field_id": "cost.balance", "internal_field_id": "64796a6d1fe36facde08b58b" },
+        { "external_field_id": "contact.email", "internal_field_id": "64790603dacf95afc7c4b073" },
+        { "external_field_id": "address.city", "internal_field_id": "64790211dacf95afc7c4aefe" },
+        { "external_field_id": "contact.phone", "internal_field_id": "6478c6e151f01eedbb86f1eb" },
+        { "external_field_id": "signers[0].name", "internal_field_id": "647a82ba160bb5b0127b8544" },
+        { "external_field_id": "address.street", "internal_field_id": "6478fa60dacf95afc7c4aea1" },
+        {
+          "external_field_id": "system.panel.name",
+          "internal_field_id": "647a4b0f8a363e8fedfdf052"
+        },
+        {
+          "external_field_id": "system.inverter.name",
+          "internal_field_id": "6478c8145cc074b383ce1f49"
+        },
+        {
+          "external_field_id": "system.panel.count",
+          "internal_field_id": "6478c7fa5cc074b383ce1f48"
+        },
+        { "external_field_id": "stateIncentive", "internal_field_id": "64816bcebcdac05ced538f4c" },
+        {
+          "external_field_id": "federalIncentive",
+          "internal_field_id": "64816c02bcdac05ced538fb9"
+        },
+        {
+          "external_field_id": "system.inverter.count",
+          "internal_field_id": "6478ca4f5cc074b383ce1f4a"
+        },
+        { "external_field_id": "hoa", "internal_field_id": "647a4b538a363e8fedfdf0cc" },
+        { "external_field_id": "notes", "internal_field_id": "65ba936da4db19bea80228cb" },
+        { "external_field_id": "paymentType", "internal_field_id": "647a4d888a363e8fedfdf2b6" },
+        { "external_field_id": "payment2", "internal_field_id": "647a91e024ab78b9dc3fd067" },
+        { "external_field_id": "payment1", "internal_field_id": "647911ca6a1fba46bc2c671e" },
+        { "external_field_id": "address.state", "internal_field_id": "64790b5b5cc074b383ce1f4d" },
+        { "external_field_id": "loanAmount", "internal_field_id": "647a96ca24ab78b9dc3fd068" },
+        { "external_field_id": "warrantyTerm", "internal_field_id": "647e3211da83216299898226" },
+        {
+          "external_field_id": "address.postal_code",
+          "internal_field_id": "6479034cdacf95afc7c4af91"
+        },
+        { "external_field_id": "ec.name", "internal_field_id": "647a832924ab78b9dc3fd065" },
+        { "external_field_id": "1solarAddress", "internal_field_id": "647a4fd28a363e8fedfdf59c" },
+        { "external_field_id": "cancelDate", "internal_field_id": "647a4ff38a363e8fedfdf5db" },
+        {
+          "external_field_id": "newadditionsquareft",
+          "internal_field_id": "67369e85a7d8c5f14074dcd7"
+        },
+        { "external_field_id": "Thermostat Temp", "internal_field_id": "6515c2b5351df857d87369d1" },
+        { "external_field_id": "mileageperyear", "internal_field_id": "67369edca7d8c5f14074dd7f" },
+        { "external_field_id": "EVCharger", "internal_field_id": "6515c363a304ddc722b9edb9" },
+        { "external_field_id": "newSpa", "internal_field_id": "67369ee975d90f1449eacaef" },
+        { "external_field_id": "AdditionToHome", "internal_field_id": "6515c2dba304ddc722b9ec1a" },
+        {
+          "external_field_id": "moreTimeSpentAtHome",
+          "internal_field_id": "6515c2ce39bab7ed8c9043ba"
+        },
+        {
+          "external_field_id": "ChangingGasToElectric",
+          "internal_field_id": "6515c2f939bab7ed8c90440b"
+        },
+        { "external_field_id": "Thermostat", "internal_field_id": "6515c312351df857d8736a7f" },
+        {
+          "external_field_id": "additionalResidents",
+          "internal_field_id": "6515c327351df857d8736aa5"
+        },
+        { "external_field_id": "newPoolOrSpa", "internal_field_id": "6515c338351df857d8736aa8" },
+        { "external_field_id": "address.full", "internal_field_id": "6499f6f828edc3e60769723c" },
+        {
+          "external_field_id": "existingsolarinfo",
+          "internal_field_id": "67369f162a01ea4d572fca77"
+        },
+        { "external_field_id": "OtherMessage", "internal_field_id": "6515c29c351df857d87369c0" },
+        { "external_field_id": "NewRVOutlet", "internal_field_id": "6515c36e351df857d8736b7d" },
+        { "external_field_id": "LargerShopTools", "internal_field_id": "6515c34aa304ddc722b9ed7e" },
+        { "external_field_id": "outdoorKitchen", "internal_field_id": "6515c35aa304ddc722b9eda1" },
+        { "external_field_id": "OtherCheckbox", "internal_field_id": "6515c2e739bab7ed8c9043e7" },
+        { "external_field_id": "existingsolar", "internal_field_id": "67369f232a01ea4d572fca7b" },
+        { "external_field_id": "signers[1].name", "internal_field_id": "647a82fe24ab78b9dc3fd063" },
+        { "external_field_id": "signers[2].name", "internal_field_id": "647a830d24ab78b9dc3fd064" }
+      ],
+      "boundaries": [
+        "62bf6ab64cf33b7cf84fe6a6",
+        "6310d36ee1b34d166784b2a0",
+        "63bc82ad358953e1dd9e371a",
+        "63cf155783e25f650717453c",
+        "64d3fbc1cd354df702a463fe"
+      ],
+      "utility_providers": [],
+      "type": "Installation Agreement",
+      "signers": [
+        {
+          "order": 0,
+          "external_id": "1",
+          "title": "Homeowner 1",
+          "type": "homeowner",
+          "required": true,
+          "_id": "67369f2975d90f1449eacb9d"
+        },
+        {
+          "order": 3,
+          "external_id": "2",
+          "title": "Energy Consultant",
+          "type": "ec",
+          "required": true,
+          "_id": "67369f2975d90f1449eacb9e"
+        },
+        {
+          "order": 1,
+          "external_id": "3",
+          "title": "Homeowner 2",
+          "type": "homeowner",
+          "required": false,
+          "_id": "67369f2975d90f1449eacb9f"
+        },
+        {
+          "order": 2,
+          "external_id": "4",
+          "title": "Homeowner 3",
+          "type": "homeowner",
+          "required": false,
+          "_id": "67369f2975d90f1449eacba0"
+        }
+      ],
+      "language": "en",
+      "thumbnail": "/images/public/contract-template-thumbnail/82c7de7d-400c-469f-ae1e-bffa5cffe27e.png",
+      "notify_emails": ["leads@1solar.com"],
+      "disabled": false,
+      "integrations": { "customer": true, "paykeeper": true },
+      "schema_version": 1,
+      "created_at": "2023-06-23T06:15:52.793Z",
+      "updated_at": "2024-11-15T01:08:57.525Z",
+      "__v": 0,
+      "adders": { "status": "disabled", "_ids": [] },
+      "templateRoles": []
+    },
+    "field_values": {
+      "6477bbed15487997978773e4": "Cruz",
+      "6478c73451f01eedbb86f30b": "JA Solar",
+      "6478c78a51f01eedbb86f341": 405,
+      "6478ca4f5cc074b383ce1f4a": 1,
+      "647903a251f01eedbb86f825": 2025,
+      "64790603dacf95afc7c4b073": "Ibthr4u2baby@yahoo.com",
+      "6478c8145cc074b383ce1f49": "SolarEdge",
+      "6478c9e351f01eedbb86f599": "7600",
+      "6479036c5cc074b383ce1f4c": "25 year - 3.99% with Autopay",
+      "6477baf851f01eedbb86e711": "Carrie",
+      "6478c7fa5cc074b383ce1f48": 5,
+      "6478fab75cc074b383ce1f4b": 4.894640289553275,
+      "6477bc8951f01eedbb86e844": {
+        "user_input": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "formatted": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "street_number": "813",
+        "route": "Earth Luster Rd",
+        "city": "Las Vegas",
+        "county": "Clark County",
+        "state": { "long": "Nevada", "short": "NV" },
+        "country": "US",
+        "postal_code": "89178",
+        "location": { "type": "Point", "coordinates": [-115.299512, 36.0333318] }
+      },
+      "6478c6e151f01eedbb86f1eb": "5628521163",
+      "6478cabe51f01eedbb86f64b": 9911.646586345381,
+      "6478fa7951f01eedbb86f744": 3.0469135802469136,
+      "647a82ba160bb5b0127b8544": "Carrie Cruz",
+      "6478fa60dacf95afc7c4aea1": "813 Earth Luster Rd",
+      "64790211dacf95afc7c4aefe": "Las Vegas",
+      "6479034cdacf95afc7c4af91": "89178",
+      "647a4b0f8a363e8fedfdf052": "JA Solar 405",
+      "6479047bdacf95afc7c4afee": "0",
+      "6515c2ce39bab7ed8c9043ba": false,
+      "6515c2f939bab7ed8c90440b": false,
+      "6515c312351df857d8736a7f": false,
+      "6515c327351df857d8736aa5": false,
+      "6515c338351df857d8736aa8": false,
+      "67369ee975d90f1449eacaef": false,
+      "6515c2dba304ddc722b9ec1a": false,
+      "6515c363a304ddc722b9edb9": false,
+      "6515c36e351df857d8736b7d": false,
+      "6515c34aa304ddc722b9ed7e": false,
+      "6515c35aa304ddc722b9eda1": false,
+      "67369f232a01ea4d572fca7b": false,
+      "6515c2e739bab7ed8c9043e7": false,
+      "6479038f51f01eedbb86f816": 2.025,
+      "64790b5b5cc074b383ce1f4d": "NV",
+      "647911ca6a1fba46bc2c671e": "See Loan Docs",
+      "647a4d888a363e8fedfdf2b6": "Loan",
+      "647a4fd28a363e8fedfdf59c": "6012 S Topaz Street, Las Vegas, NV 89120",
+      "647a4ff38a363e8fedfdf5db": "2025-03-31T18:38:40.916Z",
+      "647a832924ab78b9dc3fd065": "Eric Schrader",
+      "647a91e024ab78b9dc3fd067": "See Loan Docs",
+      "647a96ca24ab78b9dc3fd068": "9911.65",
+      "647e3211da83216299898226": "10",
+      "64816bcebcdac05ced538f4c": 0,
+      "64816c02bcdac05ced538fb9": 2973.4939759036142,
+      "64816d58bcdac05ced5391a7": 3000.077683422196,
+      "6499f6f828edc3e60769723c": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+      "65ba936da4db19bea80228cb": "critter guard for all panels ",
+      "64796a6d1fe36facde08b58b": "9911.65"
+    },
+    "customer_update": {
+      "name": { "first": "Carrie", "last": "Cruz", "full": "Carrie Cruz" },
+      "address": {
+        "user_input": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "formatted": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "street_number": "813",
+        "route": "Earth Luster Rd",
+        "city": "Las Vegas",
+        "county": "Clark County",
+        "state": { "long": "Nevada", "short": "NV" },
+        "country": "US",
+        "postal_code": "89178",
+        "location": { "type": "Point", "coordinates": [-115.299512, 36.0333318] }
+      },
+      "email": "Ibthr4u2baby@yahoo.com",
+      "phone": "5628521163",
+      "panel": { "brand": "JA Solar", "size": "405", "count": 5 },
+      "inverter": { "brand": "SolarEdge", "size": "7600", "count": 1 },
+      "contract_price": 9911.646586345381,
+      "ppw_cash": 3.0469135802469136,
+      "ppw_financed": 4.894640289553275,
+      "finance_plan": "25 year - 3.99% with Autopay",
+      "system_size": 2025,
+      "notes": []
+    },
+    "document_values": [
+      { "name": "system.size", "value": "2.025" },
+      { "name": "cost.gross", "value": "9,911.647" },
+      { "name": "cost.deposit", "value": "$0.00" },
+      { "name": "estFirstYearProduction", "value": "3,000.078" },
+      { "name": "cost.balance", "value": "9,911.65" },
+      { "name": "contact.email", "value": "Ibthr4u2baby@yahoo.com" },
+      { "name": "address.city", "value": "Las Vegas" },
+      { "name": "contact.phone", "value": "(562) 852-1163" },
+      { "name": "signers[0].name", "value": "Carrie Cruz" },
+      { "name": "address.street", "value": "813 Earth Luster Rd" },
+      { "name": "system.panel.name", "value": "JA Solar 405" },
+      { "name": "system.inverter.name", "value": "SolarEdge" },
+      { "name": "system.panel.count", "value": "5" },
+      { "name": "stateIncentive", "value": "0" },
+      { "name": "federalIncentive", "value": "2,973.494" },
+      { "name": "system.inverter.count", "value": "1" },
+      { "name": "notes", "value": "critter guard for all panels " },
+      { "name": "paymentType", "value": "Loan" },
+      { "name": "payment2", "value": "See Loan Docs" },
+      { "name": "payment1", "value": "See Loan Docs" },
+      { "name": "address.state", "value": "NV" },
+      { "name": "loanAmount", "value": "$9,911.65" },
+      { "name": "warrantyTerm", "value": "10" },
+      { "name": "address.postal_code", "value": "89178" },
+      { "name": "ec.name", "value": "Eric Schrader" },
+      { "name": "1solarAddress", "value": "6012 S Topaz Street, Las Vegas, NV 89120" },
+      { "name": "cancelDate", "value": "2025-03-31" },
+      { "name": "EVCharger", "value": false },
+      { "name": "newSpa", "value": false },
+      { "name": "AdditionToHome", "value": false },
+      { "name": "moreTimeSpentAtHome", "value": false },
+      { "name": "ChangingGasToElectric", "value": false },
+      { "name": "Thermostat", "value": false },
+      { "name": "additionalResidents", "value": false },
+      { "name": "newPoolOrSpa", "value": false },
+      { "name": "address.full", "value": "813 Earth Luster Rd, Las Vegas, NV 89178, USA" },
+      { "name": "NewRVOutlet", "value": false },
+      { "name": "LargerShopTools", "value": false },
+      { "name": "outdoorKitchen", "value": false },
+      { "name": "OtherCheckbox", "value": false },
+      { "name": "existingsolar", "value": false }
+    ],
+    "matches_proposal": true,
+    "schema_version": 1,
+    "created_at": "2025-03-27T18:39:27.815Z",
+    "updated_at": "2025-03-27T18:54:10.496Z",
+    "__v": 0
+  },
+  "contractTemplate": {
+    "type": "Installation Agreement",
+    "name": "1Solar - P&I - NV - EN",
+    "language": "en"
+  },
+  "customer": {
+    "_id": "67e5964eea05963f059e3b46",
+    "created_by": {
+      "_id": "67195c462e6cdac3268d320f",
+      "name": "Eric Schrader",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJu7KwdMKREcjK08ql0qwX2EdEYl9dmhT72xalkag6epP-82g=s96-c"
+    },
+    "status": { "title": "Active", "color": "green" },
+    "installer": { "_id": "62bf61e94cf33b7cf84fd05b", "name": "1Solar" },
+    "dealership": { "_id": "62c49d041582db2b6e24e258", "name": "1Solar Sales" },
+    "groups": [],
+    "profiles": [{ "_id": "65f1c9e76b62348d7267fb7a", "name": "Michael Cook" }],
+    "proposal_id": "67e42807612987caa174c2a6",
+    "language": "en",
+    "contract_signed": true,
+    "name": { "first": "Carrie", "last": "Cruz", "full": "Carrie Cruz" },
+    "address": {
+      "user_input": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+      "formatted": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+      "street_number": "813",
+      "route": "Earth Luster Rd",
+      "city": "Las Vegas",
+      "county": "Clark County",
+      "state": { "long": "Nevada", "short": "NV" },
+      "country": "US",
+      "postal_code": "89178",
+      "location": { "type": "Point", "coordinates": [-115.299512, 36.0333318] }
+    },
+    "email": "Ibthr4u2baby@yahoo.com",
+    "phone": "5628521163",
+    "financier": { "_id": "62bf64924cf33b7cf84fd164", "name": "GoodLeap" },
+    "panel": { "brand": "JA Solar", "size": "405", "count": 5 },
+    "inverter": { "brand": "SolarEdge", "size": "7600", "count": 1 },
+    "pizza_tracker": [
+      {
+        "title": "Signed Contract",
+        "description": "Waiting to be signed",
+        "color": "#e9c46a",
+        "icon": "edit",
+        "start_date": "2025-03-27T18:17:50.547Z"
+      },
+      {
+        "title": "Perfect Packet",
+        "description": "See Required Items tab for details",
+        "color": "#cccccc",
+        "icon": "folder"
+      },
+      {
+        "title": "Permitted",
+        "description": "Not Started",
+        "color": "#cccccc",
+        "icon": "description"
+      },
+      { "title": "Installed", "description": "Not Started", "color": "#cccccc", "icon": "build" },
+      { "title": "System Act", "description": "Not Started", "color": "#cccccc", "icon": "check" }
+    ],
+    "milestones": [
+      {
+        "_id": "67e5964eea05963f059e3b5a",
+        "title": "Project Prep",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b5b",
+        "title": "Initial Design",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b5c",
+        "title": "NMA Submission",
+        "waiting_on_action": true,
+        "type": "task",
+        "assigned_to": "rep"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b5d",
+        "title": "Structural Engineering",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b5e",
+        "title": "Building Permit",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b5f",
+        "title": "NMA Approval",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b60",
+        "title": "Net Meter Installation",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b61",
+        "title": "Monitoring Account",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b62",
+        "title": "Site Survey",
+        "waiting_on_action": true,
+        "type": "appointment",
+        "assigned_to": "rep"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b63",
+        "title": "Panel Install",
+        "waiting_on_action": false,
+        "type": "appointment",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b64",
+        "title": "Electrical Install",
+        "waiting_on_action": false,
+        "type": "appointment",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b65",
+        "title": "Final Inspection",
+        "waiting_on_action": false,
+        "type": "appointment",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b66",
+        "title": "System Activation",
+        "waiting_on_action": false,
+        "type": "appointment",
+        "assigned_to": "installer"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b67",
+        "title": "Complete Financing",
+        "waiting_on_action": true,
+        "type": "task",
+        "assigned_to": "rep"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b68",
+        "title": "Utility Bill",
+        "waiting_on_action": true,
+        "type": "file",
+        "assigned_to": "rep"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b69",
+        "title": "Loan",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "goodleap"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b6a",
+        "title": "Documents",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "goodleap"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b6b",
+        "title": "Contract",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "goodleap"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b6c",
+        "title": "NTP",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "goodleap"
+      },
+      {
+        "_id": "67e5964eea05963f059e3b6d",
+        "title": "PTO",
+        "waiting_on_action": false,
+        "type": "task",
+        "assigned_to": "goodleap"
+      }
+    ],
+    "notes": [],
+    "integrations": { "goodleap_id": "67e5964eea05963f059e3b36" },
+    "created_at": "2025-03-27T18:17:50.560Z",
+    "updated_at": "2025-03-27T18:54:47.284Z",
+    "__v": 0,
+    "contract_price": 9911.646586345381,
+    "finance_plan": "25 year - 3.99% with Autopay",
+    "ppw_cash": 3.0469135802469136,
+    "ppw_financed": 4.894640289553275,
+    "system_size": 2025
+  },
+  "milestones": [
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5a",
+      "matching_id": "Project Prep",
+      "type": "task",
+      "title": "Project Prep",
+      "notes": [],
+      "order": 100,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5b",
+      "matching_id": "Initial Design",
+      "type": "task",
+      "title": "Initial Design",
+      "notes": [],
+      "order": 200,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5c",
+      "matching_id": "NMA Submission",
+      "type": "task",
+      "title": "NMA Submission",
+      "notes": [],
+      "order": 310,
+      "assigned_to": "rep",
+      "waiting_on_action": true,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5d",
+      "matching_id": "Structural Engineering",
+      "type": "task",
+      "title": "Structural Engineering",
+      "notes": [],
+      "order": 500,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5e",
+      "matching_id": "Building Permit",
+      "type": "task",
+      "title": "Building Permit",
+      "notes": [],
+      "order": 700,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b5f",
+      "matching_id": "NMA Approval",
+      "type": "task",
+      "title": "NMA Approval",
+      "notes": [],
+      "order": 885,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.476Z",
+      "updated_at": "2025-03-27T18:17:50.476Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b60",
+      "matching_id": "Net Meter Installation",
+      "type": "task",
+      "title": "Net Meter Installation",
+      "notes": [],
+      "order": 900,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b61",
+      "matching_id": "Monitoring Account",
+      "type": "task",
+      "title": "Monitoring Account",
+      "notes": [],
+      "order": 960,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b62",
+      "matching_id": "Site Survey",
+      "type": "appointment",
+      "title": "Site Survey",
+      "notes": [],
+      "order": 150,
+      "assigned_to": "rep",
+      "waiting_on_action": true,
+      "status": "Not Scheduled",
+      "appointment_type": "Site Survey",
+      "schedulable": true,
+      "reschedulable": true,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b63",
+      "matching_id": "Panel Install",
+      "type": "appointment",
+      "title": "Panel Install",
+      "notes": [],
+      "order": 855,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Scheduled",
+      "appointment_type": "Panel Install",
+      "schedulable": true,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b64",
+      "matching_id": "Electrical Install",
+      "type": "appointment",
+      "title": "Electrical Install",
+      "notes": [],
+      "order": 865,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Scheduled",
+      "appointment_type": "Electrical Install",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b65",
+      "matching_id": "Final Inspection",
+      "type": "appointment",
+      "title": "Final Inspection",
+      "notes": [],
+      "order": 880,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Scheduled",
+      "appointment_type": "Final Inspection",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b66",
+      "matching_id": "System Activation",
+      "type": "appointment",
+      "title": "System Activation",
+      "notes": [],
+      "order": 910,
+      "assigned_to": "installer",
+      "waiting_on_action": false,
+      "status": "Not Scheduled",
+      "appointment_type": "System Activation",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b67",
+      "matching_id": "Complete Financing",
+      "type": "task",
+      "title": "Complete Financing",
+      "notes": [],
+      "order": 350,
+      "assigned_to": "rep",
+      "waiting_on_action": true,
+      "status": "Incomplete",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b68",
+      "matching_id": "Utility Bill",
+      "type": "file",
+      "title": "Utility Bill",
+      "notes": [],
+      "order": 160,
+      "assigned_to": "rep",
+      "waiting_on_action": true,
+      "status": "Not Uploaded",
+      "file_type": "Utility Bill",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b69",
+      "type": "task",
+      "title": "Loan",
+      "notes": [],
+      "order": 0,
+      "assigned_to": "goodleap",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b6a",
+      "type": "task",
+      "title": "Documents",
+      "notes": [],
+      "order": 1,
+      "assigned_to": "goodleap",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b6b",
+      "type": "task",
+      "title": "Contract",
+      "notes": [],
+      "order": 2,
+      "assigned_to": "goodleap",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b6c",
+      "type": "task",
+      "title": "NTP",
+      "notes": [],
+      "order": 3,
+      "assigned_to": "goodleap",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    },
+    {
+      "customer": {
+        "_id": "67e5964eea05963f059e3b46",
+        "name": "Carrie Cruz",
+        "group_ids": [],
+        "profile_ids": ["65f1c9e76b62348d7267fb7a"],
+        "dealership_id": "62c49d041582db2b6e24e258",
+        "installer_id": "62bf61e94cf33b7cf84fd05b"
+      },
+      "_id": "67e5964eea05963f059e3b6d",
+      "type": "task",
+      "title": "PTO",
+      "notes": [],
+      "order": 4,
+      "assigned_to": "goodleap",
+      "waiting_on_action": false,
+      "status": "Not Started",
+      "schedulable": false,
+      "reschedulable": false,
+      "schema_version": 2,
+      "__v": 0,
+      "created_at": "2025-03-27T18:17:50.477Z",
+      "updated_at": "2025-03-27T18:17:50.477Z"
+    }
+  ],
+  "proposalSnapshot": {
+    "proposal": {
+      "images": {
+        "roof": "/images/public/roof/d43cd9fc-4eaa-4e85-8ddf-3447566f045b__lat__36.0333318__lng__-115.299512__ppm__16.566172971037325.jpg",
+        "layout": "/images/public/layout/a3a98116-6b3b-4406-92eb-5d1eca93faa8.png"
+      },
+      "requested_by": {
+        "_id": "65f1c9e76b62348d7267fb7a",
+        "name": "Michael Cook",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJ1u2McP8x_-T1yDuKfSJiebaDmXu5K8l6_DAZNvAPS=s96-c"
+      },
+      "installer": { "_id": "62bf61e94cf33b7cf84fd05b", "name": "1Solar" },
+      "dealership": { "_id": "62c49d041582db2b6e24e258", "name": "1Solar Sales" },
+      "disposition": {},
+      "utility_bill": {
+        "input_type": "annual",
+        "bill": {
+          "annual": 408,
+          "average": 34,
+          "monthly": [
+            20.4, 23.799999999999997, 27.200000000000003, 34, 37.400000000000006, 44.2, 51,
+            54.400000000000006, 44.2, 27.200000000000003, 23.799999999999997, 20.4
+          ]
+        },
+        "usage": {
+          "annual": 2690,
+          "average": 224.16666666666666,
+          "monthly": [
+            134.5, 156.91666666666666, 179.33333333333334, 224.16666666666666, 246.58333333333334,
+            291.4166666666667, 336.25, 358.6666666666667, 291.4166666666667, 179.33333333333334,
+            156.91666666666666, 134.5
+          ]
+        }
+      },
+      "battery_package": { "battery_only": false },
+      "layout": {
+        "version": "1.3.0",
+        "arrays": [
+          {
+            "x": 263.32513645385615,
+            "y": 247.47732794002278,
+            "rotation": 93.94134384199072,
+            "pitch": 5,
+            "production": [
+              29.29171648833692, 35.19582168273589, 50.38890415340968, 60.61111722052864,
+              66.83727965930875, 68.75762471332216, 64.55147174229029, 59.357020875541885,
+              52.310427797580424, 43.81527892103694, 31.29778446719875, 27.558255408481692
+            ],
+            "solrad": [
+              2.916232437042058, 3.860804248446982, 5.25540079075352, 6.827892900593103,
+              7.513684837639723, 8.225182900816929, 7.373086675442009, 6.654823427246773,
+              5.861293340991569, 4.56307415648527, 3.251564192471143, 2.705973673256659
+            ],
+            "modules": [
+              {
+                "x": 0,
+                "y": 0,
+                "landscape": false,
+                "efficiency": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                "luminance": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+                "active": true
+              },
+              {
+                "x": 18.786040149156324,
+                "y": 0,
+                "landscape": false,
+                "efficiency": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                "luminance": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+                "active": true
+              }
+            ]
+          },
+          {
+            "x": 340.81933762919476,
+            "y": 252.49219356119235,
+            "rotation": -88.47433834974802,
+            "pitch": 5,
+            "production": [
+              32.30372173452195, 37.833051873672154, 53.76006849183911, 61.7395952765882,
+              68.43890207843339, 69.27789135402227, 65.31483465990334, 61.804908411460715,
+              54.02652771466805, 45.97317273433329, 33.75934334084169, 30.84776934615595
+            ],
+            "solrad": [
+              3.162607924559549, 4.111000477165777, 5.618880198169903, 7.001846434157537,
+              7.771561145720006, 8.300451214380917, 7.48688430781396, 6.956054124438116,
+              6.057998798540058, 4.733944889555419, 3.463736875764193, 2.994874402022389
+            ],
+            "modules": [
+              {
+                "x": 0,
+                "y": 0,
+                "landscape": false,
+                "efficiency": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                "luminance": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+                "active": true
+              },
+              {
+                "x": -18.786040149156324,
+                "y": 0,
+                "landscape": false,
+                "efficiency": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                "luminance": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+                "active": true
+              }
+            ]
+          },
+          {
+            "x": 290.6987100033539,
+            "y": 279.88107503065095,
+            "rotation": 93.40093370822538,
+            "pitch": 5,
+            "production": [
+              29.29171648833692, 35.19582168273589, 50.38890415340968, 60.61111722052864,
+              66.83727965930875, 68.75762471332216, 64.55147174229029, 59.357020875541885,
+              52.310427797580424, 43.81527892103694, 31.29778446719875, 27.558255408481692
+            ],
+            "solrad": [
+              2.916232437042058, 3.860804248446982, 5.25540079075352, 6.827892900593103,
+              7.513684837639723, 8.225182900816929, 7.373086675442009, 6.654823427246773,
+              5.861293340991569, 4.56307415648527, 3.251564192471143, 2.705973673256659
+            ],
+            "modules": [
+              {
+                "x": 0,
+                "y": 0,
+                "landscape": true,
+                "efficiency": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                "luminance": [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255],
+                "active": true
+              }
+            ]
+          }
+        ],
+        "panel_width": 18.786040149156324,
+        "panel_height": 28.526949856126272
+      },
+      "shade_analysis": { "enabled": false },
+      "name": { "first": "Carrie", "last": "Cruz", "full": "Carrie Cruz" },
+      "address": {
+        "state": { "long": "Nevada", "short": "NV" },
+        "location": { "type": "Point", "coordinates": [-115.299512, 36.0333318] },
+        "user_input": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "formatted": "813 Earth Luster Rd, Las Vegas, NV 89178, USA",
+        "street_number": "813",
+        "route": "Earth Luster Rd",
+        "city": "Las Vegas",
+        "county": "Clark County",
+        "country": "US",
+        "postal_code": "89178"
+      },
+      "email": "Ibthr4u2baby@yahoo.com",
+      "phone": "5628521163",
+      "groups": [],
+      "profiles": [{ "_id": "65f1c9e76b62348d7267fb7a", "name": "Michael Cook" }],
+      "language": "en",
+      "recent_action": "2025-03-27T18:22:39.111Z",
+      "status": "Complete",
+      "utility_provider_id": "62bf6aa94cf33b7cf84fe25d",
+      "financier_id": "62bf64924cf33b7cf84fd164",
+      "loan_id": "62c4bd149ec256cb6f239738",
+      "panel_id": "664ebaebc3d18d00fa928cd3",
+      "inverter_id": "62bf6a574cf33b7cf84fdb15",
+      "customer_id": "67e5964eea05963f059e3b46",
+      "funding_type": "loan",
+      "base_ppw": 2.8,
+      "offset": 100,
+      "tax_credits": true,
+      "follows_defaults": true,
+      "page_ids": [
+        "62bf645b4cf33b7cf84fd12f",
+        "62bf645b4cf33b7cf84fd130",
+        "62bf645b4cf33b7cf84fd131",
+        "62bf645b4cf33b7cf84fd132",
+        "62bf645b4cf33b7cf84fd133",
+        "62bf645b4cf33b7cf84fd134",
+        "62bf645b4cf33b7cf84fd135",
+        "62bf645b4cf33b7cf84fd136",
+        "62bf645b4cf33b7cf84fd137",
+        "62bf645b4cf33b7cf84fd138",
+        "62bf645b4cf33b7cf84fd139",
+        "62bf645b4cf33b7cf84fd13a",
+        "62bf645b4cf33b7cf84fd13b",
+        "62bf645b4cf33b7cf84fd13c",
+        "62bf645b4cf33b7cf84fd13d"
+      ],
+      "proposal_template_id": "639a1fe4a4969b99733baf7d",
+      "builds": [
+        {
+          "profile_id": "65f1c9e76b62348d7267fb7a",
+          "time_open": "2025-03-26T16:15:06.451Z",
+          "time_close": "2025-03-26T16:16:24.502Z",
+          "type": "initial_build",
+          "ending_status": "Complete",
+          "_id": "67e4280a612987caa174c2ac"
+        },
+        {
+          "profile_id": "65f1c9e76b62348d7267fb7a",
+          "time_open": "2025-03-27T16:18:57.302Z",
+          "_id": "67e57a71ea05963f059de7d0"
+        }
+      ],
+      "edits": [
+        {
+          "who": {
+            "account_id": "65ef7c54149c9540c0eca0ed",
+            "profile_id": "65f1c9e76b62348d7267fb7a",
+            "name": "Michael Cook"
+          },
+          "timestamp": "2025-03-26T16:20:37.134Z",
+          "changes": [
+            { "field": "integrations.vivint.validity_status", "new": "valid" },
+            { "field": "integrations.vivint.offer", "new": {} },
+            { "field": "base_ppw", "old": 3, "new": 2.8 }
+          ],
+          "_id": "67e42955ea05963f059b98ed"
+        },
+        {
+          "who": {
+            "account_id": "65ef7c54149c9540c0eca0ed",
+            "profile_id": "65f1c9e76b62348d7267fb7a",
+            "name": "Michael Cook"
+          },
+          "timestamp": "2025-03-26T16:20:58.234Z",
+          "changes": [
+            { "field": "integrations.vivint.validity_status", "new": "valid" },
+            { "field": "integrations.vivint.offer", "new": {} },
+            {
+              "field": "loan_id",
+              "old": "62c4bd149ec256cb6f239738",
+              "new": "62c4bd149ec256cb6f239739"
+            }
+          ],
+          "_id": "67e4296aea05963f059b9994"
+        },
+        {
+          "who": {
+            "account_id": "65ef7c54149c9540c0eca0ed",
+            "profile_id": "65f1c9e76b62348d7267fb7a",
+            "name": "Michael Cook"
+          },
+          "timestamp": "2025-03-26T16:21:21.999Z",
+          "changes": [
+            { "field": "integrations.vivint.validity_status", "new": "valid" },
+            { "field": "integrations.vivint.offer", "new": {} },
+            {
+              "field": "loan_id",
+              "old": "62c4bd149ec256cb6f239739",
+              "new": "62c4bd149ec256cb6f239738"
+            }
+          ],
+          "_id": "67e42982612987caa174c686"
+        },
+        {
+          "who": {
+            "account_id": "67195c162e6cdac3268d30fb",
+            "profile_id": "67195c462e6cdac3268d320f",
+            "name": "Eric Schrader"
+          },
+          "timestamp": "2025-03-27T18:17:50.402Z",
+          "changes": [{ "field": "integrations.goodleap_id.buffer", "new": "Z+WWTuoFlj8Fnjs2" }],
+          "_id": "67e5964eea05963f059e3b43"
+        },
+        {
+          "who": {
+            "account_id": "67195c162e6cdac3268d30fb",
+            "profile_id": "67195c462e6cdac3268d320f",
+            "name": "Eric Schrader"
+          },
+          "timestamp": "2025-03-27T18:22:39.115Z",
+          "changes": [
+            { "field": "integrations.vivint.validity_status", "new": "valid" },
+            { "field": "integrations.vivint.offer", "new": {} },
+            { "field": "additional_adders[0].pricing_method", "new": "fixed" },
+            { "field": "additional_adders[0].price", "new": 500 },
+            { "field": "additional_adders[0].enabled", "new": true },
+            { "field": "additional_adders[0].name", "new": "critter guard for all panels " },
+            { "field": "additional_adders[0].origin", "new": "rep" }
+          ],
+          "_id": "67e5976fea05963f059e3e34"
+        }
+      ],
+      "integrations": { "goodleap_id": "67e5964eea05963f059e3b36" },
+      "adder_ids": [],
+      "additional_adders": [
+        {
+          "origin": "rep",
+          "name": "critter guard for all panels ",
+          "enabled": true,
+          "price": 500,
+          "pricing_method": "fixed",
+          "_id": "67e5976fea05963f059e3e33"
+        }
+      ],
+      "rebuild_requested": { "requested": false },
+      "archived": false,
+      "schema_version": 1,
+      "_id": "67e42807612987caa174c2a6",
+      "created_at": "2025-03-26T16:15:03.074Z",
+      "updated_at": "2025-03-26T16:15:03.074Z",
+      "__v": 0
+    },
+    "utility_provider": {
+      "eiaid": "13407",
+      "name": "Nevada Power Co",
+      "type": "Bundled",
+      "state": "NV",
+      "lcoe": 0.15167268817,
+      "basic_charge_pre": 5,
+      "basic_charge_post": 5,
+      "dg_rules": "Lol IDK",
+      "dg_derate": 5,
+      "genability_id": 531,
+      "_id": "62bf6aa94cf33b7cf84fe25d",
+      "__v": 0
+    },
+    "financier": {
+      "integrations": { "link_fetch": { "identifier": "goodleap1" } },
+      "name": "GoodLeap",
+      "funding_type": "loan",
+      "schema_version": 1,
+      "_id": "62bf64924cf33b7cf84fd164",
+      "created_at": "2022-07-01T21:18:10.105Z",
+      "updated_at": "2022-07-01T21:18:10.105Z",
+      "__v": 0
+    },
+    "loan": {
+      "financier": { "_id": "62bf64924cf33b7cf84fd164", "name": "GoodLeap" },
+      "enabled": true,
+      "disabled_by_financier": false,
+      "name": "25 year - 3.99% with Autopay",
+      "installer_id": "62bf61e94cf33b7cf84fd05b",
+      "term": 25,
+      "origination_fee": 0.3775,
+      "rate": 3.99,
+      "type": "goodleap",
+      "states": ["AZ", "CO", "ID", "NV", "UT"],
+      "goodleap": {
+        "id": "958830b7-393c-468c-a0ba-86856db4d9f1",
+        "estimatedFirstPaymentMonth": 3,
+        "productId": "a6bd24cf-0c68-4c46-874c-0177037b7491",
+        "productDescription": "Standard principal and interest loan, with 18-month re-amortization for ITC paydown."
+      },
+      "schema_version": 1,
+      "_id": "62c4bd149ec256cb6f239738",
+      "created_at": "2024-05-29T16:30:56.862Z",
+      "updated_at": "2024-05-29T16:30:56.862Z",
+      "__v": 0
+    },
+    "panel": {
+      "name": "JA Solar 405",
+      "brand": "JA Solar",
+      "model": "JAM54S31-405/MR",
+      "wattage": 405,
+      "width": 1.134,
+      "height": 1.722,
+      "ptc": 1,
+      "is_lightreach_supported": true,
+      "schema_version": 1,
+      "_id": "664ebaebc3d18d00fa928cd3",
+      "created_at": "2024-05-23T03:41:31.618Z",
+      "updated_at": "2024-05-23T03:41:31.618Z",
+      "__v": 0
+    },
+    "inverter": {
+      "name": "SolarEdge SE10000H-US",
+      "brand": "SolarEdge",
+      "model": "SE10000H-US",
+      "ac_output": 9.994,
+      "max_panels": 52,
+      "is_lightreach_supported": true,
+      "schema_version": 1,
+      "_id": "62bf6a574cf33b7cf84fdb15",
+      "created_at": "2022-07-01T21:42:47.763Z",
+      "updated_at": "2022-07-01T21:42:47.763Z",
+      "__v": 0
+    },
+    "adders": []
+  }
+}
