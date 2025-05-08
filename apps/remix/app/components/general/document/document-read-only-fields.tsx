@@ -52,10 +52,14 @@ export const DocumentReadOnlyFields = ({
             <FieldRootContainer
               field={field}
               key={field.id}
-              cardClassName="border-gray-300/50 !shadow-none backdrop-blur-[1px] bg-gray-50 ring-0 ring-offset-0"
+              cardClassName={cn(
+                'ring-0 ring-offset-0',
+                field.type !== 'TEXT' &&
+                  'border-gray-300/50 !shadow-none backdrop-blur-[1px] bg-gray-50 ring-0 ring-offset-0',
+              )}
             >
               <div className="absolute -right-3 -top-3">
-                {!field.fieldMeta?.readOnly && (
+                {false && (
                   <PopoverHover
                     trigger={
                       <Avatar className="dark:border-foreground h-8 w-8 border-2 border-solid border-gray-200/50 transition-colors hover:border-gray-200">

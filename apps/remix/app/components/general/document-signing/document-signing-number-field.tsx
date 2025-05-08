@@ -263,7 +263,7 @@ export const DocumentSigningNumberField = ({
         >
           <span className="flex items-center justify-center gap-x-1">
             <Hash className="h-[clamp(0.625rem,20cqw,0.925rem)] w-[clamp(0.625rem,20cqw,0.925rem)]" />{' '}
-            <span className="text-[clamp(0.425rem,25cqw,0.825rem)]">{fieldDisplayName}</span>
+            <span className="text-[clamp(0.1rem,2cqw,0.825rem)]">{fieldDisplayName}</span>
           </span>
         </p>
       )}
@@ -272,7 +272,7 @@ export const DocumentSigningNumberField = ({
         <div className="flex h-full w-full items-center">
           <p
             className={cn(
-              'text-muted-foreground dark:text-background/80 w-full text-[clamp(0.425rem,25cqw,0.825rem)] duration-200',
+              'text-muted-foreground dark:text-background/80 w-full text-[clamp(0.1rem,2cqw,0.825rem)] duration-200',
               {
                 'text-left': parsedFieldMeta?.textAlign === 'left',
                 'text-center':

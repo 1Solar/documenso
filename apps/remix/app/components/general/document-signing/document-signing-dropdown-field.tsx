@@ -189,7 +189,7 @@ export const DocumentSigningDropdownField = ({
                 )}
               >
                 <SelectValue
-                  className="text-[clamp(0.425rem,25cqw,0.825rem)]"
+                  className="text-[clamp(0.1rem,2cqw,0.825rem)]"
                   placeholder={`${_(msg`Select`)}`}
                 />
               </SelectTrigger>
@@ -205,7 +205,7 @@ export const DocumentSigningDropdownField = ({
         )}
 
         {field.inserted && (
-          <p className="text-muted-foreground dark:text-background/80 text-[clamp(0.425rem,25cqw,0.825rem)] duration-200">
+          <p className="text-muted-foreground dark:text-background/80 text-[clamp(0.1rem,2cqw,0.825rem)] duration-200">
             {field.customText}
           </p>
         )}

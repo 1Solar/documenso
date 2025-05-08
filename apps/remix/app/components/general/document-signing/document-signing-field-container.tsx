@@ -138,7 +138,8 @@ export const DocumentSigningFieldContainer = ({
           />
         )}
 
-        {readOnlyField && (
+        {/* Disable read only field pop-up */}
+        {false && readOnlyField && (
           <button className="bg-background/40 absolute inset-0 z-10 flex h-full w-full items-center justify-center rounded-md text-sm opacity-0 duration-200 group-hover:opacity-100">
             <span className="bg-foreground/50 dark:bg-background/50 text-background dark:text-foreground rounded-xl p-2">
               <Trans>Read only field</Trans>
